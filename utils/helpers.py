@@ -15,7 +15,7 @@ def load_data(ticker, interval, period_days, ma_window):
 
 def display_sidebar():
     st.sidebar.header("설정")
-    ticker = st.sidebar.text_input("티커 심볼", value="BTC-USD")
+    ticker = st.sidebar.text_input("티커 심볼", value="BTC-KRW")
     strategy = st.sidebar.selectbox("전략", options=['Basic', 'VRB'])
     interval = st.sidebar.selectbox("데이터 간격", options=['1h', '1d'], index=1)
     period_days = st.sidebar.number_input("데이터 기간 (일수)", min_value=30, max_value=365, value=360)
